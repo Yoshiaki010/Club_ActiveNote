@@ -50,9 +50,30 @@ lis.pop(0)
 print(lis)
 ```
 
+## リストの受け取り（競技プロ-必見）
+
+1文字ずつ空白がある文字列をリストとして受け取る場合、次のようになる
+
+1. `input().split()`で文字列のリストとして受け取る
+    1. `変数名.split(引数)`で`変数`を`引数`ごとに区切ったリストを返す
+1. `list(map(int,input().split()))` で整数のリストとして受け取れる
+    1. `map(関数,引数)`で`引数`に関数を適用した値を返す
+
+        ※返り値は`map`型のため、`list()`を使ってリスト型に戻す
+
+```python
+# 文字列
+lis = input().split()
+print(lis)
+
+# 整数
+lis = list(map(int,input().split()))
+print(lis)
+```
+
 ## 演習
 
-- [Add more(Ver.String)](ensyuu01.md)
-- [Add more(Ver.Int)](ensyuu02.md)
+- [(Ver.)](ensyuu03.md)
+- [(Ver.)](ensyuu04.md)
 
 [トップページ](studypython.md)
